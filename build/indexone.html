@@ -1,0 +1,94 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="MobileOptimized" content="240"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="*">
+    <link rel="stylesheet" href="./css/style-one.css" />
+    <script type="text/javascript" src="player.js"></script>
+</head>
+<body class="">
+<div id="widget" class="playlist-right">
+    <style type="text/css">#player {width:calc(100% - 230px)}</style>
+    <div id="player">
+        <span class="controls-play-pause-big" data-control="play-pause">
+            <span class="title">
+                <center>
+                    <span class="film-name"></span>
+                    <span class="episode"></span>
+                </center>
+            </span>
+            </span>
+        <div class="controls" data-control="controls-container">
+            <span class="controls-play-pause" data-control="play-pause"></span>
+            <span class="controls-progress-bar" data-control="progress-bar">
+                    <span class="controls-progress-bar-value" data-control="progress-bar-value"></span>
+                </span>
+            <span class="controls-time-inverse" data-control="time-inverse"></span>
+            <span class="controls-mute" data-control="mute"></span>
+            <span class="controls-volume" data-control="volume">
+                        <span class="controls-volume-value" data-control="volume-value"></span>
+                    </span>
+            <span class="controls-full-screen" data-control="full-screen"></span>
+        </div>
+    </div>
+    <div id="playlist">
+        <div class="title">
+            Playlist
+            <div class="contorls">
+                <div class="replay"></div>
+                <div class="sort"></div>
+            </div>
+        </div>
+        <a name="open1"
+           data-duration="3300"
+           data-video-url="http://imagees1.pw/mp/serials/464963_7_8.mp4"
+           data-image-url="http://imagees1.pw/i2/75545/111-min.jpg"
+           data-season-num="1"
+           data-episode-num="Test title 2"
+           data-time-to-reg="80">
+            <img src="http://imagees1.pw/i2/75545/111-min.jpg" />
+            <div class="info">
+                <div class="episode">Test description</div>
+                <div class="views">245 просмотров</div>
+            </div>
+        </a>
+        <a name="open1"
+           data-duration="3300"
+           data-video-url="http://imagees1.pw/mp/serials/464963_7_8.mp4"
+           data-image-url="http://imagees1.pw/i2/75545/111-min.jpg"
+           data-season-num="1"
+           data-episode-num="Test title 2"
+           data-time-to-reg="80">
+            <img src="http://imagees1.pw/i2/75545/111-min.jpg" />
+            <div class="info">
+                <div class="episode">Test description</div>
+                <div class="views">245 просмотров</div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+<script>
+    mWidget.init({
+        video: {
+            name: "Test title 1",
+            duration: "3300",
+            src: "http://imagees1.pw/mp/serials/464963_7_8.mp4",
+            format: 'mp4',
+            poster_src: "http://imagees1.pw/i2/75545/111-min.jpg",
+            season: "1",
+            episode: "1 episode"
+        },
+        film_id: 1000,
+        skip_video: false,
+        hide_name: false,
+        registered: false,
+        time_to_reg: 80
+    });
+
+</script>
